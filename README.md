@@ -1,51 +1,85 @@
 🔥 FireGuard IoT - Hệ Thống Báo Cháy AI Thông Minh
 
-Dự án IoT phát hiện lửa sớm sử dụng AI (YOLOv8), ESP32-CAM và điều khiển qua Web Dashboard (Streamlit) & Telegram.
+Một giải pháp an toàn, thông minh và phản ứng tức thì cho ngôi nhà của bạn.
 
-🚀 Tính năng chính
+📖 Giới thiệu
 
-Nhận diện lửa: Sử dụng mô hình YOLOv8 Nano, độ chính xác cao.
+FireGuard IoT là dự án tích hợp sức mạnh của Trí tuệ nhân tạo (AI) và Internet vạn vật (IoT) để phát hiện sớm nguy cơ hỏa hoạn. Hệ thống không chỉ hú còi tại chỗ mà còn gửi hình ảnh hiện trường ngay lập tức đến điện thoại của chủ nhà, giúp bạn xử lý tình huống dù đang ở bất cứ đâu.
 
-Giám sát thời gian thực: Xem video trực tiếp qua Web Dashboard.
+🚀 Tính năng nổi bật
 
-Cảnh báo tức thì:
+👁️ Mắt thần AI: Sử dụng mô hình YOLOv8 Nano được huấn luyện chuyên sâu, nhận diện ngọn lửa chính xác kể cả lửa nhỏ (bật lửa, nến).
 
-Hú còi/Bật bơm nước tự động (qua ESP32).
+📹 Giám sát trực quan: Xem video trực tiếp (Live Stream) từ hiện trường qua giao diện Web Dashboard hiện đại.
 
-Gửi tin nhắn + Ảnh hiện trường qua Telegram.
+⚡ Phản ứng tức thì:
 
-Chống báo động giả: Logic xác nhận lửa liên tục trong 10 khung hình.
+Kích hoạt Còi hú & Máy bơm tự động qua ESP32.
+
+Gửi Cảnh báo khẩn cấp + Ảnh chụp hiện trường qua Telegram.
+
+🛡️ Chống báo động giả: Thuật toán thông minh lọc nhiễu (chỉ báo động khi phát hiện lửa liên tục trong 10 khung hình).
 
 🛠️ Công nghệ sử dụng
 
-AI: Python, Ultralytics YOLOv8, OpenCV.
+Lĩnh vực
 
-Web App: Streamlit.
+Công nghệ / Phần cứng
 
-Phần cứng: ESP32-CAM, Relay, Máy bơm/Còi hú.
+🧠 AI Core
 
-IoT: HTTP Request, Telegram Bot API.
+Python, Ultralytics YOLOv8, OpenCV
 
-⚙️ Cài đặt
+💻 Web App
 
-Cài đặt thư viện:
+Streamlit (Giao diện điều khiển)
+
+🤖 Phần cứng
+
+ESP32-CAM, Module Relay, Còi hú, Máy bơm mini
+
+🌐 IoT & Net
+
+HTTP Request (REST API), Telegram Bot API
+
+⚙️ Hướng dẫn cài đặt
+
+1. Chuẩn bị môi trường
+
+Cài đặt các thư viện Python cần thiết:
 
 pip install ultralytics streamlit opencv-python requests
 
 
-Chạy hệ thống:
+2. Thiết lập phần cứng
 
-Kết nối ESP32 với WiFi.
+Nạp code cho ESP32-CAM (sử dụng Arduino IDE).
 
-Chạy Web Dashboard:
+Đấu nối Relay và Còi báo động theo sơ đồ chân (GPIO 12, 13...).
+
+3. Chạy hệ thống
+
+Kết nối máy tính và ESP32 vào cùng một mạng WiFi.
+
+Khởi chạy Web Dashboard:
 
 streamlit run dashboard.py
 
 
 📸 Hình ảnh dự án
 
-(Bạn có thể chèn ảnh chụp màn hình Dashboard hoặc ảnh phần cứng vào đây)
 
-📞 Liên hệ
+📞 Liên hệ & Tác giả
 
-Dự án được thực hiện bởi: [CAO TIEN DUNG- DUNG HARRY]
+Dự án được phát triển và duy trì bởi Cao Tiến Dũng (Dung Harry). Rất mong nhận được sự đóng góp ý kiến từ cộng đồng!
+
+👨‍💻 Developer: Cao Tiến Dũng (Dung Harry)
+🚀 Motto: "Code bằng đam mê, debug bằng cà phê ☕"
+
+🤝 Kết nối với mình:
+
+Facebook: Dung Harry (Harry Yiu Oi)
+
+GitHub: caotiendung111
+
+⭐ Nếu thấy dự án này hữu ích, hãy ủng hộ mình bằng cách bấm Star cho Repository này nhé! Cảm ơn bạn rất nhiều! ❤️
