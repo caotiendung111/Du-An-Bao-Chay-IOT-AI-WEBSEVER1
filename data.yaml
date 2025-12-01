@@ -1,0 +1,13 @@
+# Đường dẫn tuyệt đối đến thư mục fire_data (đã sửa thêm /fire_data)
+path: "C:/Users/HUNG/FILETRAINDAMLUA/datasets/fire_data"
+
+# Đường dẫn tương đối
+train: train/images
+val: valid/images
+test: test/images
+
+# Số lượng class
+nc: 1
+
+# Tên class
+names: ['fire']

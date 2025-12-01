@@ -1,0 +1,14 @@
+# Bỏ qua môi trường ảo
+venv/
+.venv/
+.idea/
+
+# Bỏ qua file rác của Python
+__pycache__/
+*.pyc
+
+# Bỏ qua dữ liệu ảnh nặng
+datasets/
+
+# Bỏ qua các lần train nháp (Chỉ giữ lại file best.pt thủ công)
+runs/
