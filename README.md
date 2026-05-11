@@ -309,10 +309,10 @@ Dự án này được cấp phép dưới **MIT License** - xem file [LICENSE](
 
 | Nền Tảng | Thông Tin |
 |----------|----------|
-| 📘 Facebook | [Dung Harry (Harry Yiu Oi)](https://facebook.com/dungh) |
+| 📘 Facebook | [Dung Harry ](https://facebook.com/harryiuoi) |
 | 🐙 GitHub | [@caotiendung111](https://github.com/caotiendung111) |
 | 💼 LinkedIn | [Cao Tiến Dũng](https://linkedin.com/in/caotiendung) |
-| 📧 Email | caotiendung111@email.com |
+| 📧 Email | tiendung04dtvt@email.com |
 
 ---
 
