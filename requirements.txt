@@ -1,8 +1,9 @@
-ultralytics
-streamlit
-opencv-python
-requests
-pillow
-python-telegram-bot
-numpy
-pandas
+ultralytics>=8.1.0
+streamlit>=1.30.0
+opencv-python>=4.8.0.0
+requests>=2.31.0
+pillow>=10.0.0
+python-telegram-bot>=20.0
+numpy>=1.24.0
+pandas>=2.0.0
+pytest>=7.4.0

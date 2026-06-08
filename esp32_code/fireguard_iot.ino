@@ -3,7 +3,7 @@
 #include "esp_http_server.h"
 
 // ===========================
-// CẤU HÌNH WIFI & CAMERA
+// WI-FI & CAMERA DEFINITIONS
 // ===========================
 const char* ssid = "YOUR_WIFI_SSID";
 const char* password = "YOUR_WIFI_PASSWORD";
@@ -25,7 +25,7 @@ const char* password = "YOUR_WIFI_PASSWORD";
 #define HREF_GPIO_NUM     23
 #define PCLK_GPIO_NUM     22
 
-// Pin cho Relay
+// Actuator Pin Definitions (Relays)
 const int ALARM_PIN = 12;
 const int PUMP_PIN = 13;
 
@@ -33,7 +33,7 @@ httpd_handle_t stream_httpd = NULL;
 httpd_handle_t control_httpd = NULL;
 
 // ===========================
-// XỬ LÝ LUỒNG VIDEO
+// VIDEO STREAM HANDLER (MJPEG)
 // ===========================
 static esp_err_t stream_handler(httpd_req_t *req) {
     camera_fb_t * fb = NULL;
@@ -88,7 +88,7 @@ static esp_err_t stream_handler(httpd_req_t *req) {
 }
 
 // ===========================
-// XỬ LÝ LỆNH ĐIỀU KHIỂN RELAY
+// RELAY CONTROL HANDLER (API)
 // ===========================
 static esp_err_t relay_handler(httpd_req_t *req) {
     char buf[100];
